@@ -1,0 +1,39 @@
+ul {
+  list-style: none;
+  padding: 30px;
+  margin: 20px;
+  overflow: hidden;  /*check what is it*/
+  background-color: #6174ce;
+  width: 100%;
+  position: relative;
+}
+
+li {
+  display: inline;
+  color: white;
+  font-size: larger;
+}
+
+
+li a {
+  display: inline; /*block: 纵向菜单，inline:横向菜单*/
+  color: #000;
+  padding: 10px 30px;
+  text-decoration: none; /*菜单项目是否有下划线等*/
+}
+
+li a.active {
+  /* background-color: #4CAF50; */
+  font-weight: bold;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  /* background-color: #555; */
+  color: white;
+  border-bottom: 4px solid white;
+}
+
+li:hover{
+  display:inline;
+}
